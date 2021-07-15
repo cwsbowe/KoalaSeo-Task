@@ -2,12 +2,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
+.body{
+	padding: 0;
+	margin: 0;
+}
+
+.logobox{
+	height: 100px;
+	width: calc(100% - 40px);
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 20px;
+}
+
+.logo{
+	justify-content: center;
+	align-items: center;
+	display:flex;
+	cursor: pointer;
+}
+
+.main{
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.mainleft{
+	height: 100%;
+	width: 40%;
+	background-color: #e5e5e5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headingbox{
+	position: absolute;
+	left: 10%;
+	z-index: 2;
+	transform: translateX(40px);
+}
+
+.h1{
+	color: #29b462;
+	font-size: 4rem;
+	font-family: 'Caveat', cursive;
+	margin-bottom: 0px;
+}
+
+.h2{
+	color: #ee957f;
+	font-family: 'Caveat', cursive;
+	font-size: 2rem;
+	margin-top: 5px;
+}
+
+.app{
+	margin: 0;
+	font-family: 'Yomogi', cursive;
+	font-size: 1.4rem
+}
+
+.p{
+	font-family: 'Arvo', serif;
+	font-size: 1.3rem;
+}
+
+.pricecontainers{
+	display: flex;
+	align-items: center;
+}
+
+.gallery{
+	display: flex;
+	max-width: 1000px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 40px;
+	flex-direction: column;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.info{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.foot{
+	height: 80px;
+	width: calc(100% - 80px);
+	background-color: #404249;
+	display: flex;
+	padding: 0px 40px;
+	align-items: center;
+	color: white;
+	font-family: 'Arvo', serif;
+}
+
 .hero_img{
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	overflow: hidden;
+	height: 100%;
+	width: 60%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero_img::before{
@@ -21,6 +137,11 @@
 
 .btn{
 	transition: background-color 200ms, color 200ms;
+	padding: 15px;
+	border:2px solid #ee957f;
+	width: fit-content;
+	cursor: pointer;
+	color: #ee957f
 }
 
 .btn:hover{
@@ -33,6 +154,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Arvo', serif;
+	font-size: 3rem;
 }
 
 .wiggle::after{
@@ -52,7 +175,10 @@
 	padding: 50px;
 	display: flex;
     flex-direction: column;
+	height: 700px;
+	background-color: #EE957F;
 }
+
 
 .pricing::before{
 	content: "";
@@ -80,7 +206,7 @@
     background-position: center center;
 }
 
-#pricing-container-small{
+.pricing-container-small{
 	height: 400px;
 	width: 250px;
 	background-color: #8fc8ad;
@@ -94,4 +220,8 @@
 	background-color: #8fc8ad;
 	margin: 10px;
 	border-radius: 5px;
+}
+
+#secret{
+	display: none;
 }
